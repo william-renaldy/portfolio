@@ -30,9 +30,7 @@ body{
     margin: auto;
 }
 /* text css above hero image*/
-.hero_title {
-    font-size: 4.5rem;
-}
+
 .hero_desc {
     font-size: 2rem;
 }
@@ -83,7 +81,7 @@ body{
     font-size: 36px;
     cursor: pointer;
 }
-.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-github:hover, .fa-envelope:hover{
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-github:hover, .fa-envelope:hover, .fa-hackerrank:hover, .fa-kaggle:hover{
     color: #008000;
 }
 .fab, .fa {
@@ -93,4 +91,58 @@ body{
 #footer {
     background-color: #808080;
     text-align: center;
+}
+
+@media (min-width: 1000px) {
+    .hero_title {
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 858px) {
+    .hero_title {
+        font-size: 4.5rem;
+    }
+}
+ 
+@media (min-width: 780px) {
+    .hero_title {
+        font-size: 4.1rem;
+    }
+}
+ 
+@media (min-width: 702px) {
+    .hero_title {
+        font-size: 3.8rem;
+    }
+}
+ 
+@media (min-width: 624px) {
+    .hero_title {
+        font-size: 3.3rem;
+    }
+}
+ 
+@media (min-width: 550px) {
+    .hero_title {
+        font-size: 3rem ;
+    }
+}
+
+@media (min-width: 480px) {
+    .hero_title {
+        font-size: 3rem ;
+    }
+}
+
+@media (min-width: 400px) {
+    .hero_title {
+        font-size: 3rem ;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero_title {
+        font-size: 3rem ;
+    }
 }
