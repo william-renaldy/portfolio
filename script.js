@@ -20,7 +20,7 @@ navLinks.forEach((l) => {
 
 
 const form = document.querySelector("form"),
-statusTxt = form.querySelector(".button-area span");
+statusTxt = form.querySelector(".button-area");
 form.onsubmit = (e)=>{
 
   e.preventDefault();
@@ -31,9 +31,11 @@ form.onsubmit = (e)=>{
   form.classList.add("disabled");*/
 
   let xhr = new XMLHttpRequest();
-  xhr.open("POST", "message.php", true);
+  xhr.open('post','message.php',true);
+  //xhr.setRequestHeader('Content-type','application/x-www-form-urlencoded');
   
   xhr.onload = ()=>{
+    alert(xhr.status);
     if(xhr.readyState == 4 && xhr.status == 200){
       let response = xhr.response;
       if(response.indexOf("required") != -1 || response.indexOf("valid") != -1 || response.indexOf("failed") != -1){
@@ -50,5 +52,7 @@ form.onsubmit = (e)=>{
     }
   }
   let formData = new FormData(form);
+  alert();
   xhr.send(formData);
+  alert("sending");
 }
